@@ -1,0 +1,141 @@
+.transaction-history {
+  padding-bottom: 2rem;
+  &__filter {
+    &-block {
+      border-bottom: 1px solid #ddd;
+    }
+    &-item {
+      border-top: 1px solid #ddd;
+      padding: 1rem 0.5rem 0.5rem 0.5rem;
+    }
+    &-title {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__input {
+    border: 1px solid #ddd;
+    height: 2.2857rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__calendar {
+    position: absolute;
+    top: calc(505 - 0.85rem);
+    right: 0.5rem;
+    width: 1.7143rem;
+    height: 1.7143rem;
+    background: #424242;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-svg {
+      width: 1rem;
+    }
+  }
+  
+  .react-datepicker-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .react-datepicker__input-container {
+    height: 100%;
+    input {
+      width: 100%;
+      height: 2.2857rem;
+      outline: none;
+      border: none;
+      padding: 0;
+      padding-left: 0.5rem;
+      box-sizing: border-box;
+    }
+  }
+
+  &__search-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #079c20;
+    height: 2.7143rem;
+    width: 94%;
+    margin: 0.5rem auto;
+  }
+
+  &__search-button-icon {
+    position: absolute;
+    top: calc(50% - 0.78rem);
+    right: 0.5rem;
+    width: 1.5714rem;
+    height: 1.5714rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.3);
+    border-radius: 100%;
+    &-svg {
+      width: 1.1429rem;
+      height: 1.1429rem;
+      * {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__search-block {
+    padding: 0.7rem;
+    position: relative;
+    border-top: 1px solid #ddd;
+  }
+
+  &__search-icon {
+    position: absolute;
+    left: 1.2rem;
+    top: calc(50% - 0.5rem);
+    
+    &-svg {
+      width: 1rem;
+      * {
+        fill: rgba(0,0,0,.5);
+      }
+    }
+  }
+
+  &__users-header {
+    background: linear-gradient(to bottom,#0e70b9 0,#005693 100%);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  &__result-wrapper {
+    padding: 0 3px;
+  }
+
+  &__user-header-item {
+    font-size: 0.7143rem;
+    width: 100%;
+    &_type {
+      &_center {
+        text-align: center;
+      }
+      &_right {
+        text-align: right;
+        max-width: 15%;
+      }
+    }
+  }
+  
+  .transaction-item:nth-child(2n) {
+    background: #f8f8f8f8;
+  }
+}

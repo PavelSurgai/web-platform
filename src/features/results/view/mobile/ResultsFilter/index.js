@@ -1,1 +1,0 @@
-export { ResultsFilter } from './ResultsFilter';

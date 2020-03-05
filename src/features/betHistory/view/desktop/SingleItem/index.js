@@ -1,1 +1,0 @@
-export { SingleItem } from './SingleItem';

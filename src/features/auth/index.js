@@ -1,2 +1,3 @@
-import { reducer, actions } from './redux';
-export { reducer, actions };
+import Auth from './view';
+import { actions, reducer } from './redux';
+export { actions, reducer, Auth };

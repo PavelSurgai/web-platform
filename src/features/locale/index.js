@@ -1,2 +1,3 @@
 import { actions, reducer } from './redux';
-export { actions, reducer };
+import Locale from './view';
+export { actions, reducer, Locale };
