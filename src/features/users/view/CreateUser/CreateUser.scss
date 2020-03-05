@@ -1,0 +1,52 @@
+.create-user {
+  &__header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    height: 2.4286rem;
+    background: linear-gradient(to bottom,#0e70b9 0,#005693 100%);
+    font-size: 0.9rem;
+    padding-left: 0.8rem;
+  }
+  &__wrapper {
+    background: #f3f3f3;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+  }
+  &__title {
+    margin-bottom: 0.4rem;
+  }
+  &__item {
+    margin-bottom: 0.8rem;
+  }
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.7143rem;
+    width: 90%;
+    background: #079c20;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__user-icon-wrapper {
+    position: absolute;
+    right: 0.5rem;
+    top: calc(50% - 0.85rem);
+    background: rgba(0, 0, 0, 0.3);
+    height: 1.7rem;
+    border-radius: 100%;
+    width: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__user-icon {
+    &-svg {
+      height: 1.2rem;
+    }
+  }
+}

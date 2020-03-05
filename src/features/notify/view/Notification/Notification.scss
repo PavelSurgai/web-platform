@@ -1,0 +1,150 @@
+.notification {
+  display: block;
+  width: 100%;
+  min-height: 4rem;
+  position: relative;
+  z-index: 100;
+  margin-top: 1rem;
+  color: #878787;
+  font-size: 0.875rem;
+  font-weight: bold;
+  animation: 0.7s ease init;
+
+  &_deleting {
+    animation: 0.7s ease delete;
+  }
+
+  &__img-error {
+    position: absolute;
+    width: 2.6rem;
+    left: 0.7rem;
+    top: 1.2rem;
+  }
+
+  &__img-success {
+    position: absolute;
+    width: 2.6rem;
+    left: 0.7rem;
+    top: 1.2rem;
+  }
+
+  &__img-default {
+    position: absolute;
+    width: 2.6rem;
+    left: 0.7rem;
+    top: 1.2rem;
+  }
+
+  &__left {
+    height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  &__cross {
+    display: block;
+    width: 2rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__text {
+    flex-grow: 2;
+    box-sizing: border-box;
+    padding: 0rem 0rem 0rem 4.4rem;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 4rem;
+    word-break: break-word;
+  }
+
+  &__wrapper {
+    width: 103%;
+    height: 5rem;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.2rem 0;
+    box-sizing: border-box;
+  }
+
+  &__wrapper_type {
+    &_default {
+      background: #0E1621;
+      color: white;
+      border-radius: 0.625rem;
+    }
+
+    &_default::before {
+      content: "";
+      position: absolute;
+      width: 3.8rem;
+      height: 5rem;
+      top: 0px;
+      background: rgba(255, 199, 0, 0.2);
+      border-radius: 0.5rem 2rem 2rem 0.5rem;
+    }
+
+    &_error {
+      background: #0E1621;
+      color: white;
+      border-radius: 0.625rem;
+    }
+
+    &_error::before {
+      content: "";
+      position: absolute;
+      width: 3.8rem;
+      height: 5rem;
+      top: 0px;
+      background: rgba(226, 76, 75, 0.1);
+      border-radius: 0.5rem 2rem 2rem 0.5rem;
+    }
+
+    &_success {
+      background: #0E1621;
+      color: #fff;
+      border-radius: 0.625rem;
+    }
+
+    &_success::before {
+      content: "";
+      position: absolute;
+      width: 3.8rem;
+      height: 5rem;
+      top: 0px;
+      background: rgba(163, 209, 102, 0.1);
+      border-radius: 0.5rem 2rem 2rem 0.5rem;
+    }
+  }
+
+  @keyframes init {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes delete {
+    0% {
+      opacity: 1;
+      height: 4rem;
+    }
+    70% {
+      opacity: 0.5;
+      transform: translateX(120%);
+      height: 4rem;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(200%);
+      height: 0;
+    }
+  }
+}

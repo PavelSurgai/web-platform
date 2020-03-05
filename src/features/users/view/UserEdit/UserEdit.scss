@@ -1,0 +1,81 @@
+.user-edit {
+  &__info {
+    padding: 0.5rem;
+    &-item {
+      margin-bottom: 0.8rem;
+    }
+    &-title {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &__value {
+    width: 100%;
+    min-height: 2.2em;
+    text-align: left;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+
+  &__buttons {
+    padding: 1rem;
+  }
+
+  &__buttons-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__ban-button,
+  &__unban-button {
+    cursor: pointer;
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 2.5rem;
+  }
+
+  &__unban-button {
+    background: #079c20;
+  }
+
+  &__ban-button {
+    background: #FF0000;
+  }
+
+  &__reset-button,
+  &__payment-button {
+    cursor: pointer;
+    background: #0e70b9;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  &__payment-block {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  &__payment-button {
+    margin-top: 0.8rem;
+  }
+
+  &__payment-item {
+    margin-bottom: 0.5rem;
+  }
+
+  &__payment-title {
+    margin-bottom: 0.3rem;
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #333;
+  height: 3.0714rem;
+  &__text {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    width: 10%;
+  }
+  &__center {
+    width: 80%;
+  }
+  &__arrow {
+    left: 1rem;
+    &-svg {
+      height: 1rem;
+      transform: rotate(180deg);
+      * {
+        fill: #fff;
+      }
+    }
+  }
+}

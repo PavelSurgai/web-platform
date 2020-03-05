@@ -1,1 +1,0 @@
-export { PayHistory } from './view/mobile';

@@ -1,0 +1,32 @@
+.transaction-item {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  height: 1.6429rem;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  &__column-amount {
+    color: #c22326;
+  }
+  &__column,
+  &__column-amount {
+    font-size: 0.7857rem;
+    width: 100%;
+    &_type {
+      &_center {
+        text-align: center;
+      }
+      &_right {
+        text-align: right;
+      }
+    }
+    &_colored {
+      color: #00890d;
+    }
+    &_type_right {
+      max-width: 15%;
+    }
+  }
+}
