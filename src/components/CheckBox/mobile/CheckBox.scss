@@ -1,0 +1,20 @@
+.check-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border: 2px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  flex-shrink: 0;
+  * {
+    filter: contrast(0);
+  }
+
+  &__input {
+    display: none;
+  }
+}

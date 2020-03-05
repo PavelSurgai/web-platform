@@ -1,0 +1,122 @@
+.menu-balance-block {
+  color: #fff;
+  border-bottom: 1px solid #182533;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1875rem;
+    font-weight: 500;
+    padding-bottom: 0.625rem;
+  }
+  &__content {
+    text-align: right;
+    margin-top: 0.1875rem;
+    font-size: 1.25rem;
+  }
+  &__payment-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+  &__top-up-button,
+  &__withdrawal-button {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 2.125rem;
+  }
+  &__top-up-button {
+    background: #1f4b9e;
+  }
+  &__withdrawal-button {
+    border: 2px solid #5288c1;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__balance-square,
+  &__bonus-square {
+    padding: 0.5rem 0.8125rem 0.4375rem 0.5625rem;
+    box-sizing: border-box;
+    background: #182533;
+    border-radius: 5px;
+    width: 47%;
+  }
+  &__id-square {
+    padding: 0.5rem 0.8125rem 0.4375rem 0.5625rem;
+    box-sizing: border-box;
+    background: #182533;
+    border-radius: 5px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 0.8125rem;
+    color: #b7b7b7;
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 0.25rem;
+    &-svg {
+      width: 0.9375rem;
+    }
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-svg {
+      width: 1rem;
+    }
+  }
+  &__action-buttons {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+  }
+  &__sign-in,
+  &__sign-up {
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__sign-in {
+    background: #9e1f1f;
+    margin-bottom: 1.4375rem;
+  }
+  &__sign-up {
+    background: #1f4b9e;
+    margin-bottom: 1.8rem;
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    &-svg {
+      width: 1rem;
+    }
+    &_opened {
+      transform: scaleY(-1);
+    }
+  }
+}

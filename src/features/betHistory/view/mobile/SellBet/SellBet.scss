@@ -1,0 +1,41 @@
+.sell-bet {
+  width: 100%;
+  background: #182533;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1.5625rem;
+  box-sizing: border-box;
+  position: relative;
+  &__error {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3.5714rem;
+    background: #0061d3;
+  }
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__text {
+    margin-bottom: 0.8125rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  &__highlighted-text {
+    margin-bottom: 0.8125rem;
+    font-size: 1.25rem;
+    color: #429BDB;
+  }
+
+  &__buttons {
+    width: 100%;
+  }
+}

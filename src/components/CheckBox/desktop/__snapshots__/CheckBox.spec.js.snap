@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button desktop tests CheckBox tests render properly 1`] = `
+<div
+  className="check-box"
+>
+  <div
+    className={
+      Object {
+        "has": [Function],
+        "is": [Function],
+        "mix": [Function],
+        "split": [Function],
+        "state": [Function],
+        "toString": [Function],
+      }
+    }
+  >
+    <img
+      alt=""
+      src="test-file-stub"
+    />
+  </div>
+  <input
+    checked={true}
+    className={
+      Object {
+        "has": [Function],
+        "is": [Function],
+        "mix": [Function],
+        "split": [Function],
+        "state": [Function],
+        "toString": [Function],
+      }
+    }
+    name="test"
+    onChange={[MockFunction]}
+    type="checkbox"
+  />
+</div>
+`;

@@ -1,0 +1,33 @@
+@import 'shared/style/varDesktop.scss';
+
+.subheader {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 4.25rem 0rem 1.25rem;
+  background: $subheader-gradient;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  &__odds-type {
+    display: flex;
+    align-items: center;
+  }
+  &__odd-text {
+    margin-right: 1rem;
+    color: $semi-light-blue;
+  }
+  &__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__link {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    padding: 0 1.25rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.profile-links {
+  padding: 0.625rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__link {
+    margin-bottom: 0.9375rem;
+    color: #6C7883;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-right: 0.875rem;
+    text-transform: uppercase;
+  }
+
+  &__container-fk {
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

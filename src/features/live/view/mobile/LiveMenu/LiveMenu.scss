@@ -1,0 +1,24 @@
+.live-menu {
+  width: 100%;
+  display: flex;
+  height: 2.8rem;
+  background: linear-gradient(90deg, #1A5BBC 5.6%, #063C8B 100%);
+  border: 1px solid #268BE9;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0px 0px;
+  user-select: none;
+  color: #ffffff;
+  &__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-radius: 10px 10px 0 0;
+    text-transform: uppercase;
+    &_active {
+      font-weight: 900;
+      background: linear-gradient(180deg, #AFDB52 0%, #307B40 100%);
+      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+    }
+  }
+}

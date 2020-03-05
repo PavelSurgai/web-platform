@@ -1,0 +1,19 @@
+.event-coef {
+  &__wrapper {
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+ 
+  &:hover {
+    background: #c12b2c!important;
+  }
+  &_select {
+    background: #c12b2c!important;
+  }
+}

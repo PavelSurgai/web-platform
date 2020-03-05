@@ -1,0 +1,25 @@
+.back-block {
+  border-bottom: 1px solid #000;
+  &__button {
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+    background: #182533;
+    border: none;
+    border-right: 1px solid #000812;
+  }
+  
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__arrow-svg {
+    width: 1.25rem;
+    height: 1rem;
+  }
+}

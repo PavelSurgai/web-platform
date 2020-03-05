@@ -1,0 +1,9 @@
+<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 4H3V5H2V4Z" fill="#6C7883"/>
+<path d="M3 6H2V7H3V6Z" fill="#6C7883"/>
+<path d="M4 6H5V7H4V6Z" fill="#6C7883"/>
+<path d="M5 4H4V5H5V4Z" fill="#6C7883"/>
+<path d="M6 4H7V5H6V4Z" fill="#6C7883"/>
+<path d="M7 6H6V7H7V6Z" fill="#6C7883"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 9H1C0.4485 9 0 8.59635 0 8.1V1.9C0 1.40365 0.4485 1 1 1H2V0H3V1H6V0H7V1H8C8.5515 1 9 1.40365 9 1.9V8.1C9 8.59635 8.5515 9 8 9ZM8.00049 7.97209L8 3H0.999998L0.99999 7.97209H8.00049Z" fill="#6C7883"/>
+</svg>

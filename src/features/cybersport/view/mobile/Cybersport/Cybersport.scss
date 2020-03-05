@@ -1,0 +1,12 @@
+.cybersport {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  &__menu-container {
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+}

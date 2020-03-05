@@ -1,0 +1,14 @@
+export { LineModule } from './Line/desktop/Line';
+export { FlatPagesModule } from './FlatPages/desktop/FlatPages';
+export { FullEventModule } from './FullEvent/desktop/FullEvent';
+export { LiveModule } from './Live/desktop/Live';
+export { ProfileModule } from './Profile/desktop/Profile';
+export { SlotsModule } from './Slots/desktop/Slots';
+export { LiveGamesModule } from './LiveGames/desktop/LiveGames';
+export { ResultsModule } from './Results/desktop/Results';
+export { TotalizatorModule } from './Totalizator/desktop/Totalizator';
+export { CybersportModule } from './Cybersport/desktop/Cybersport';
+export { BonusesModule } from './Bonuses/desktop/Bonuses';
+export { RestoreByEmailModule } from './RestoreByEmail/desktop/RestoreByEmail';
+export { ContactsModule } from './Contacts/desktop/Contacts';
+export { BroadcastModule } from './Broadcast/desktop/Broadcast';

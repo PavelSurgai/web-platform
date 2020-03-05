@@ -1,0 +1,72 @@
+.multi-live-tourneys-menu-item {
+  height: 3rem;
+  width: 25%;
+  min-width: 24.1%;
+  box-sizing: border-box;
+  padding: 0 0.8rem;
+  margin-right: 1%;
+  border-radius: 1.5rem;
+  background: #113B79;
+  &__header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;    
+  }
+  &__image {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+  &__count {
+    font-size: 1.8rem;
+    margin-left: auto;
+  }
+  &__name {
+    text-transform: uppercase;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__events {
+    position: absolute;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    color: #002857;
+    margin-left: auto;
+    display: none;
+    &_open {
+      display: flex;
+    }
+  }
+  &__item {
+    padding: 0.3rem 1rem;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    &:first-child {
+      border-top-right-radius: 10px;
+    }
+  }
+  &__teams {
+    display: flex;
+    flex-direction: column;
+  }
+  &__score {
+    display: flex;
+    flex-direction: column;
+  }
+}

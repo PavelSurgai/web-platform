@@ -1,0 +1,35 @@
+.basket {
+  position: relative;
+  background: #1f4b9e;
+  overflow: hidden;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: 0.5s;
+  margin-top: 0.5rem;
+  &__scroll-block { 
+    overflow-y: auto;
+    max-height: 54vh;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    };
+    &::-webkit-scrollbar-thumb {
+      background: #c12b2c;
+      border-radius: 6px;
+    }
+  }
+  &__buttons {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button {
+    min-width: 60%;
+    &:first-child {
+      margin-bottom: 0.7rem;
+    }
+  }
+}

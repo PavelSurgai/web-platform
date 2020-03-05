@@ -1,0 +1,13 @@
+@import "shared/style/varDesktop.scss";
+
+.slots-layout {
+  width: 100%;
+  height: 100%;
+  background: $ultra-dark-blue;
+  box-sizing: border-box;
+
+  &_isAuth {
+    padding: 1rem;
+    text-align: center;
+  }
+}

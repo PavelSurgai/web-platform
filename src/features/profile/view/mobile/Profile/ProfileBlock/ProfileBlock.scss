@@ -1,0 +1,25 @@
+.profile-block {
+  border-bottom: 1px solid #182533;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1875rem;
+    font-weight: 500;
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
+    color: #fff;
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    &-svg {
+      width: 1rem;
+    }
+    &_opened {
+      transform: scaleY(-1);
+    }
+  }
+}

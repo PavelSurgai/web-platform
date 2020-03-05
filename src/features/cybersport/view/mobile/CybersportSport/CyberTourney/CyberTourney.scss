@@ -1,0 +1,14 @@
+.cyber-tourney {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  &__events {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #666666
+  }
+}

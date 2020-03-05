@@ -1,0 +1,18 @@
+.basket-type {
+  width: 100%;
+  border-bottom: 2px solid #c12b2c;
+  display: flex;
+  background: #1f4b9e;
+  text-transform: uppercase;
+  font-weight: bold;
+  &__element {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.8rem;
+    &_active {
+      background: #c12b2c;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import 'shared/style/varDesktop.scss';
+
+.set-language {
+  display: flex;
+  flex-direction: column;
+  width: 2.4375rem;
+  position: relative;
+  &__item {
+    width: 1.5625rem;
+    max-height: 1.625rem;
+    display: block;
+  }
+  &__items {
+    position: absolute;
+    display: none;
+    z-index: 3;
+    top: 1.5625rem;
+    left: -0.2rem;
+    background: $blue-pizdec;
+    padding: 0.2rem;
+    border-radius: 0 0 7px 7px;
+  }
+  &_open &__items {
+    display: block;
+  }
+  &_open &__arrow {
+    transform: rotate(180deg);
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__arrow {
+    width: 8px;
+    display: block;
+    transition: transform 0.2s ease-in;
+  }
+}

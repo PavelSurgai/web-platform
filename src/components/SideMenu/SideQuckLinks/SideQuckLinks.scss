@@ -1,0 +1,31 @@
+@import 'shared/style/varMobile.scss';
+.qucklinks {
+  background: rgba(99, 109, 116, 0.966);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;   
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  &__quck-item {
+    background: gray;
+    width: 24%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+  }
+  &__quck-icon-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__quck-name {
+    font-size: 0.5rem;
+    color: white;
+    text-align: center;
+  }
+}

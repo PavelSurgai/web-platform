@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  background: #050A14;
+  color: #FFFFFF;
+  ul {
+    margin: 0;
+  }
+  &__text {
+    padding: 1.7rem 0.85rem;
+    box-sizing: border-box;
+    color: #0061D3;
+    &-paragraph {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__top {
+    padding: 0 0.85rem 1rem;
+    box-sizing: border-box;
+  }
+  &__button-upload {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8rem 0 1.5rem 0;
+  }
+  &__button {
+    width: 100%;
+    padding: 0 0.85rem;
+    height: 2.7rem;
+    a {
+      font-size: 1rem;
+    }
+  }
+  &__logo-list {
+    padding: 1rem 0.85rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: #0D1021;
+  }
+  &__logo-item {
+    margin: 0 1rem;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem 0;
+  }
+  &__bottom-item {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-right: 1.3rem;
+  }
+}

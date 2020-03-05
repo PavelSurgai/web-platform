@@ -1,0 +1,50 @@
+@import 'shared/style/varDesktop.scss';
+
+.paginator {
+  display: flex;
+  font-size: 0.875rem;
+  align-items: center;
+  position: relative;
+  width: 8.25rem;
+  user-select: none;
+  align-self: flex-end;
+
+  &__pages {
+    width: 3.4375rem;
+    border: 1px solid $grey-border;
+    border-radius: 0.625rem;
+    background: $white;
+    position: absolute;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 3;
+    top: -0.15rem;
+    right: 0;
+  }
+  &__arrow svg {
+    display: block;
+    width: 0.5rem;
+    transition: transform 0.2s ease-in; 
+  }
+  &_open &__arrow svg {
+    transform: rotate(180deg);
+  }
+  &__current-page {
+    height: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5625rem;
+  }
+  &__page {
+    padding: 0 0.5625rem;
+    height: 1.25rem;
+    &_active {
+      background: $border-blue;
+      color: white;
+    }
+    &:hover {
+      background: $grey-border;
+    }
+  }
+}

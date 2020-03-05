@@ -1,0 +1,15 @@
+.live-tourney {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  margin-bottom: 1px;
+  &__events {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #27292f;
+  }
+}

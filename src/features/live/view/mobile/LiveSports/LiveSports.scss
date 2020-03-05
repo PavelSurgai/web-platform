@@ -1,0 +1,36 @@
+.live-sports {
+  padding: 3px;
+  box-sizing: border-box;
+  padding-top: 3.2rem;
+  &__link {
+    width: 100%;
+    height: 3.1rem;
+    display: flex;
+    align-items: center;
+    background: #182533;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 0.8rem 0 1.2rem;
+    margin-top: 3px;
+  }
+  &__icon {
+    max-width: 2rem;
+    height: 2rem;
+    * {
+      filter: grayscale(1);
+    }
+  }
+  &__text {
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+  }
+  &__arrow {
+    width: 0.5rem;
+    margin-left: auto;
+    &-svg {
+      * {
+        fill: #6C7883;
+      }
+    }
+  }
+}

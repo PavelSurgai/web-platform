@@ -1,0 +1,28 @@
+.profile-menu {
+  color: white;
+  
+  &__item {
+    background: linear-gradient(270deg, #204690 0%, #1A5BBB 100%), linear-gradient(0deg, #204690, #204690), linear-gradient(180deg, #3067B8 0%, #154894 100%);
+    box-shadow: inset 0px -1px 0px #113B79, inset 0px 1px 0px #268BE9;
+  }
+
+  &__item-link {
+    padding: 0 1.125rem;
+    height: 3.1875rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-icon {
+    display: block;
+    flex-shrink: 0;
+    width: 1.5rem;
+    margin-right: 1.1875rem;
+    padding-top: 0.3rem;
+  }
+
+  &__item-svg {
+    display: block;
+    width: 100%;
+  }
+}

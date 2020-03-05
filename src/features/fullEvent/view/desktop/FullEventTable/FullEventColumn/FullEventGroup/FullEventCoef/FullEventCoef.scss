@@ -1,0 +1,46 @@
+.full-event-coef {
+  text-transform: none;
+  width: 100%;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background: #32353d;
+  margin-top: 1rem;
+  cursor: pointer;
+  &:not(:last-child) {
+    border-right: 1px solid #000;
+  }
+  &__rate {
+    font-weight: bold;
+    padding: 0.6rem;
+    background: #1f4b9e;
+    border-radius: 3px;
+    &_select {
+      background: #c12b2c!important;
+    }
+  }
+  &_blocked {
+    opacity: 0.5;
+    cursor: default;
+  }
+  &__name {
+    height: 100%;
+    padding: 0.5rem 0 0.5rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+  &_select {
+    background: #b33131a6!important;
+  }
+  
+  &:hover {
+    .full-event-coef__rate {
+      background: #456fbd;
+    }
+    background: #383b42;
+  }
+}

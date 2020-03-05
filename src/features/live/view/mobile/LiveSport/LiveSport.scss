@@ -1,0 +1,78 @@
+.live-sport {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  
+  &__header {
+    box-sizing: border-box;
+    padding: 0 5px;
+    background: #182533;
+    padding-right: 0.9375rem;
+    border-bottom: 1px solid #666;
+  }
+
+  &__arrow {
+    transition: 0.3s;
+    &-svg {
+      width: 1rem;
+      height: 0.5625rem;
+      * {
+        fill: #6C7883;
+      }
+    }
+    &_closed {
+      transform: scaleY(-1);
+    }
+  }
+
+  &__title {
+    width: 100%;
+    
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    height: 2rem;
+  }
+  &__icon {
+    width: 1.4rem;
+    margin: 0 0.7rem;
+    filter: grayscale(1);
+  }
+  &__arrow-box {
+    width: 2.8rem;
+    min-width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem;
+    box-sizing: border-box;
+    background: #ffb401;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 1rem;
+    * {
+      fill: #fff;
+    }
+  }
+  &__arrow-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-svg {
+      width: 0.7857rem;
+      height: 1rem;
+    }
+    &_closed {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

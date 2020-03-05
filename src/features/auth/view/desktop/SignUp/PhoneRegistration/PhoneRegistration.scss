@@ -1,0 +1,65 @@
+.phone-registration {
+  width: 100%;
+  padding: 1.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  &__group {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+  &__input-container {
+    height: 3rem;
+    width: 100%;
+  }
+  &__require {
+    color: #FF0000;
+  }
+  &__group-title {
+    margin-bottom: 0.4rem;
+    user-select: none;
+  }
+  &__select-container {
+    height: 3rem;
+    width: 8rem;
+    position: relative;
+  }
+  &__accept {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+  &__accept-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  &__button {
+    width: 30%;
+  }
+  &__code-button {
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+  &__code-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    color: #1A5BBC;
+    text-decoration: underline;
+  }
+}

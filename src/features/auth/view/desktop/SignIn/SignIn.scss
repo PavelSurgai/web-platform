@@ -1,0 +1,52 @@
+.sign-in {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    flex-wrap: wrap;
+    
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      box-shadow: inset 0px -1px 0px #FFFFFF;
+      background: #CACACA;
+      margin-top: 1rem;
+    }
+  }
+
+  &__social-item {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+  }
+
+  &__label {
+    margin-bottom: 0.4rem;
+    user-select: none;
+  }
+
+  &__input {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    &_last {
+      margin-bottom: 0.7rem;
+    }
+  }
+  &__recovery {
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+
+  &__button {
+    width: 60%;
+    align-self: center;
+  }
+}

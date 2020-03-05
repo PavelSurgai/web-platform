@@ -1,0 +1,83 @@
+.totalizator {
+  width: 100%;
+  box-sizing: border-box;
+  &__header {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    height: 2.78rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: bold;
+    background: #063B8B;
+  }
+  
+  &__info-block {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    background: #FFFFFF;
+    background: linear-gradient(90deg, #1A5BBC 5.6%, #063C8B 100%);
+    justify-content: space-between;
+  }
+
+  &__sum {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__input {
+    display: flex;
+    width: 7rem;
+    margin-left: 0.5rem;
+    align-items: center;
+  }
+
+  &__jackpot {
+    margin-left: 1rem;
+  }
+
+  &__container {
+    background: #BABABA;
+    padding: 10px;
+    border: 1px solid #268BE9;
+  }
+  &__tab {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_active {
+      box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+      background: #1A5BBC;
+    }
+  }
+  &__right-block {
+    width: 8%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+  
+  &__currency {
+    margin-left: 5px;
+  }
+  
+  &__left-block {
+    flex-grow: 2;
+  }
+
+  &__outcome {
+    width: 1.5rem;
+    text-align: center;
+  }
+
+  &__button {
+    height: 2.8rem;
+  }
+}

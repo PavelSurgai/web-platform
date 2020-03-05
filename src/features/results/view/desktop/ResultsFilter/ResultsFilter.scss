@@ -1,0 +1,30 @@
+@import 'shared/style/varDesktop.scss';
+
+.results-filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $profile-background;
+  padding: 2.3125rem 0;
+  color: gray;
+  
+  &__item {
+    display: flex;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.625rem;
+    width: 26rem;
+  }
+
+  &__item-text {
+    margin-right: 0.75rem;
+    white-space: nowrap;
+  }
+
+  &__item-center-text {
+    margin: 0 0.6875rem;
+  }
+}

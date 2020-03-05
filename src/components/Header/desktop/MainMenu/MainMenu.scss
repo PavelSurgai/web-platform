@@ -1,0 +1,44 @@
+@import 'shared/style/varDesktop.scss';
+
+.main-menu {
+  height: 100%;
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+  &__list-item {
+    height: 100%;
+    cursor: pointer; 
+  }
+  &__list-item-link{ 
+    z-index: 3;
+  }
+
+  &__item-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 100%;
+    left: 1.1rem; 
+    background: $blue-pizdec;
+    z-index: 1;
+  }
+  &__list-item-link {
+    background: transparent;
+    clip-path: polygon(32px 0, 100% 0, calc(100% - 32px) 100%, 0 100%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    position: relative;
+    box-sizing: border-box;
+    margin-right: -2.1rem;
+    &_active {
+      background: $light-blue-gradient;
+    }
+  }
+}

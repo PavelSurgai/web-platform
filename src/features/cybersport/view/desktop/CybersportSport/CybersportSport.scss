@@ -1,0 +1,107 @@
+@import 'shared/style/varDesktop.scss';
+
+.cyber-sport {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid linear-gradient(180deg, #4CA5F7 0%, #0C6EFF 100%), linear-gradient(180deg, #268BE9 0%, #1A5BBC 100%), #C4C4C4;
+  background: linear-gradient(270deg, #E0E0E0 0%, #BABABA 100%);
+  &:not(:first-child) {
+    margin-top: 0.8rem;
+  }
+
+  &__header {
+    width: 100%;
+    min-height: 2.8rem;
+    background: $slots-gradient;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    width: 20%;
+    height: 100%;
+    min-height: 2.8rem;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #8DC8FF 0.01%, #0085FF 100%), linear-gradient(180deg, #268BE9 0%, #0059AA 100%), #268BE9;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    &_color {
+      &_green {
+        background: linear-gradient(180deg, #5DDB52 0%, #01764C 100%);
+      }
+      &_lightblue {
+        background: linear-gradient(180deg, #8DC8FF 0.01%, #0085FF 100%), linear-gradient(180deg, #268BE9 0%, #0059AA 100%), #268BE9;
+      }
+      &_orange {
+        background: linear-gradient(180deg, #FFB541 0%, #B86300 100%), #FF9C00;
+      }
+      &_yellow {
+        background: linear-gradient(180deg, #FFE072 0%, #E4AA00 100%), #FFD250;
+      }
+      &_lightgreen {
+        background: linear-gradient(180deg, #ACEB46 0%, #599100 100%), #89BC37;
+      }
+    }
+    &_opened {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  &__sport-img {
+    max-height: 2rem;
+    max-width: 2rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  &__arrow-box {
+    width: 2.8rem;
+    min-width: 2.8rem;
+    height: 2.3rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem;
+    box-sizing: border-box;
+    margin-left: auto;
+    * {
+      fill: #FFF;
+    }
+  }
+  &__arrow-icon {
+    width: 100%;
+    &_closed {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__collapce {
+    display: block;
+    width: 1.8rem;
+    margin-left: auto;
+    margin-right: 0.7rem;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &_closed {
+      transform: rotate(180deg);
+      padding-top: 0.3rem;
+      transition: all 0.5s ease-in-out; 
+      &:hover {
+        transform: scale(1.1) rotate(180deg);
+      }
+    }
+  }
+}

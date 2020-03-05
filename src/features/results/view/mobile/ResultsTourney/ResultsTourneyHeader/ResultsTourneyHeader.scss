@@ -1,0 +1,95 @@
+@import 'shared/style/varDesktop.scss';
+.results-tourney-header {
+  width: 100%;
+  display: flex;
+  min-height: 2.6rem;
+  height: 2.6rem;
+  background: $tourney-header;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+  color: #002857;
+  box-sizing: border-box;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+  &__title {
+    min-height: 2.6rem;
+    padding-left: 0.9375rem;
+    height: 100%;
+    width: 70%;
+    min-width: 32%;
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  &__right {
+    display: flex;
+  }
+
+  &__flag {
+    width: 1.78rem;
+    height: 1.1rem;
+  }
+
+  &__text {
+    display: block;
+    align-self: flex-start;
+    margin: auto 0;
+  }
+  &__icon {
+    width: 1.6rem;
+    min-width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 0.8rem;
+    padding-right: 0.8rem;
+    &:first-child {
+      border-right: #7FB8FD 2px solid;
+    }
+  }
+  &__col-name {
+    font-size: 0.875rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #002857;
+    &_type {
+      &_date {
+        width: 6.125rem;
+      }
+      &_result {
+        width: 9rem;
+        margin-left: 0.6875rem;
+      }
+    }
+  }
+  &__arrow-box {
+    width: 2.3rem;
+    min-width: 2.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    box-sizing: border-box;
+  }
+  &__arrow-icon {
+    width: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-svg {
+      fill: white;
+      transition: 0.2s;
+      width: 0.85rem;
+      height: 0.85rem;
+    }
+    &_closed {
+      transform: scaleY(-1);
+      transition: 0.2s;
+    }
+  }
+}

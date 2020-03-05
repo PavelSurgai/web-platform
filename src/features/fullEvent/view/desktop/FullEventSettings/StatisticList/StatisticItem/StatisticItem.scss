@@ -1,0 +1,15 @@
+.statistic-item {
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  &:hover,
+  &_active {
+    color: #429bdb;
+    border-bottom: 0.25rem solid #429bdb;
+  }
+}

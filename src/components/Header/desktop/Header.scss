@@ -1,0 +1,123 @@
+@import 'shared/style/varDesktop.scss';
+
+.header {
+  flex-shrink: 0;
+  width: calc(100% - #{$appScrollWidth});
+  min-width: 1200px;
+  display: flex;
+  user-select: none;
+  background: linear-gradient(90deg, #1F3163 0%, #123E79 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  height: 8.75rem;
+  position: fixed;
+  z-index: 15;
+  
+  &__logo {
+    width: 60%;
+    max-width: 80%;
+    margin-top: 30px;
+  }
+  &__main {
+    height: 6.25rem;
+    display: flex;
+    user-select: none;
+    width: 100%;
+  }
+  &__left {
+    height: 100%;
+    width: 11rem;
+  }
+  &__right {
+    flex-grow: 2;
+    height: 100%;
+  }
+  &__logo-bg {
+    height: 100%;
+    width: 12.75rem;
+    //background: linear-gradient(0deg, #0F3061, #1F3163), radial-gradient(ellipse at top left,#3A75CA 0%, #1F3163 70%);
+    background-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &__logo-click {
+    display: block;
+    pointer-events: all;
+    height: 100%;
+    width: 15rem;
+    z-index: 5;
+  }
+  &__top {
+    position: relative;
+    height: 50%;
+    box-sizing: border-box;
+    margin-left: 2.15rem;
+    padding-left: 4rem;
+    padding-right: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__auth-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__bottom {
+    height: 50%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    z-index: 5;
+  }
+  &__bottom-left {
+    height: 100%;
+    z-index: 7;
+    background: $blue-pizdec;
+    clip-path: polygon(32px 0%, calc(100% + 1px) 0, calc(100% + 1px) 100%, 0 100%);
+    padding-right: 3rem;
+  }
+  &__bottom-right {
+    flex-grow: 2;
+    height: 100%;
+    display: flex;
+    background: $blue-pizdec;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__separator {
+    width: 2px;
+    height: 2.375rem;
+    background: $semi-light-blue;
+    opacity: 0.4;
+    box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.59);
+  }
+  &__language {
+    padding-left: 0.9375rem;
+    padding-right: 1rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+  &__language-text {
+    margin-right: 0.9375rem;
+  }
+  &__buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    min-width: 8rem;
+    &:not(:last-of-type) {
+      margin-right: 0.8rem;
+    }
+  }
+  &__balance {
+    margin: 0 0.75rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}

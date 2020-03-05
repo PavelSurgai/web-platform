@@ -1,0 +1,15 @@
+.upcoming-menu {
+  display: flex;
+  background: #1b1d21;
+  box-sizing: border-box;
+  padding: 0.3rem 1rem;
+  &__item {
+    padding: 0.2rem 1rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    &_active {
+      color: #429bdb;
+      border-bottom: 0.25rem solid #429bdb;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.social-registration {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 0 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    height: 3.125rem;
+    width: 3.125rem;
+    margin-left: 1.8rem;
+    cursor: pointer;
+  }
+}

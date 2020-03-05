@@ -1,0 +1,147 @@
+@import 'shared/style/varDesktop.scss';
+
+.multi-item {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  background: linear-gradient(0deg, #EEEEEE, #EEEEEE);
+  color: #ffffff;
+  padding: 0 0.8125rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  color: #000000;
+  align-items: center;
+  position: relative;
+  padding-right: 2.5rem;
+  &__wrapper {
+    margin-top: 0.25rem;
+    border-radius: 10px 2rem 2rem 10px;
+    border: 1px solid $grey-border;
+    overflow: hidden;
+
+    &_open {
+      border-radius: 6px 1.2rem 1.2rem 6px;
+    }
+
+    &_remove {
+      display: none;
+    }
+  }
+
+  &__bets-table-cell {
+    overflow: hidden;
+    height: 0.875rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0.3rem;
+    
+    &_type {
+      &_date {
+        width: 8%;
+      }
+      &_info {
+        width: 56%;
+      }
+      &_amount, &_odd {
+        width: 6%;
+      }
+      &_possible {
+        justify-content: center; 
+        width: 9%,
+      }
+      &_code {
+        width: 12%;
+      }
+      &_cart {
+        width: 3%;
+      }
+    }
+  }
+
+  &__cart {
+    margin-top: 0.1rem;
+    display: block;
+    width: 1.1rem;
+    & path {
+      fill: #FFD250;
+    }
+  }
+
+  &__cart-circle {
+    height: 2.125rem;
+    width: 2.125rem;
+    right: 2.425rem;
+    position: absolute;
+    min-width: 2.125rem;
+    border-radius: 2.125rem;
+    background: #135DA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__status-bar {
+    position: absolute;
+    right: 0.15rem;
+    top: 0.15rem;
+    height: 2.125rem;
+    width: 2.125rem;
+    border-radius: 2.125rem;
+    background: #135DA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+
+    &_status {
+      &_4 {
+        background: #F33838;
+      }
+      &_34,
+      &_17410 {
+        background: #1DB954;
+      }
+    }
+  }
+  &__arrow {
+    display: block;
+    width: 11px;
+    height: 6px;
+    margin-left: 0.4375rem;
+    transition: transform .3s ease-in;
+    &-svg {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &_open &__arrow {
+    transform: rotate(180deg);
+  }
+  &__bet {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    color: #ffffff;
+    border-radius: 10px 2rem 2rem 10px;
+    padding: 0 0.8125rem;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    border: 1px solid $grey-border;
+    color: #000000;
+    margin-top: 0.25rem;
+    align-items: center;
+    position: relative;
+  }
+}

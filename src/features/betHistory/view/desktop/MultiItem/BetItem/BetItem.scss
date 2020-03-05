@@ -1,0 +1,71 @@
+@import 'shared/style/varDesktop.scss';
+
+.bet-item {
+  width: 100%;
+  min-height: 2.5rem;
+  display: flex;
+  color: #ffffff;
+  padding: 0 0.8125rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  border-top: 1px solid $grey-border;
+  background: $white;
+  color: #000000;
+  align-items: center;
+  position: relative;
+  padding-right: 2.5rem;
+
+  &__bets-table-cell {
+    overflow: hidden;
+    height: 0.875rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0.3rem;
+    &_type {
+      &_date {
+        width: 8%;
+      }
+      &_bet {
+        width: 36%;
+      }
+      &_outcome {
+        width: 20%;
+      }
+      &_odd {
+        width: 6%;
+      }
+    }
+  }
+  &__status-bar {
+    position: absolute;
+    right: 0.15rem;
+    height: 2.125rem;
+    width: 2.125rem;
+    border-radius: 2.125rem;
+    background: #135DA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+
+    &_status {
+      &_4 {
+        background: #F33838;
+      }
+      &_2 {
+        background: #1DB954;
+      }
+      &_322 {
+        background: #ffc400;
+      }
+    }
+  }
+}

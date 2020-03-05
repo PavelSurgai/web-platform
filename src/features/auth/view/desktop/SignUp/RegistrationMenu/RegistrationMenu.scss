@@ -1,0 +1,39 @@
+.registration-menu {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.35rem;
+  background: #1f4b9e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 0.9rem;
+  user-select: none;
+
+  &__item {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    &_active {
+      background: #9e1f1f;
+    }
+  }
+
+  &__img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+      height: 100%;
+    }
+  }
+}

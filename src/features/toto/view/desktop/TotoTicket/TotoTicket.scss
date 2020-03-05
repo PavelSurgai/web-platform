@@ -1,0 +1,47 @@
+.toto-ticket {
+  margin-bottom: 1rem;
+  &__header {
+    display: flex;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    align-items: center;
+    height: 2.78rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #1A5BBC 5.6%, #063C8B 100%);
+    border-radius: 10px 10px 0px 0px;
+    justify-content: space-between;
+    &_closed {
+      border-radius: 10px;
+    }
+  }
+  &__ticket-number {
+    margin-left: 0.5rem;
+  }
+  &__arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    &_closed {
+      transform: scaleY(-1);
+      transition: 0.2s;
+    }
+  }
+  &__arrow-svg {
+    width: 15px;
+    transition: 0.2s;
+    height: 15px;
+  }
+  &__information-container {
+    display: flex;
+  }
+  .toto-item {
+    margin-bottom: 0;
+    border-radius: 0;
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}

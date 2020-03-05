@@ -1,0 +1,108 @@
+.one-click-modal {
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  background: #666666;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 64%;
+  }
+  &__logo-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+  &__thank-you {
+    font-size: 1rem;
+    margin-top: 1.4375rem;
+  }
+  &__reg-success {
+    font-size: 1.2rem;
+    color: #113b79;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  &__reg-dont-forget-save {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  &__reg-info {
+    user-select: text;
+    margin-top: 3.625rem;
+    width: 100%;
+  }
+
+  &__reg-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__reg-info-item:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+  &__buttons {
+    width: 100%;
+  }
+  &__button {
+    &:first-child {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &__reg-info-label {
+    display: block;
+    color: #6C7883;
+  }
+
+  &__reg-info-value {
+    display: block;
+    color: #429BDB;
+    font-size: 1.375rem;
+  }
+
+  &__copy {
+    display: inline-block;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &_copied {
+      transition: 5s all;
+
+      & .one-click-modal__copy-text {
+        color: #5bc246;
+      }
+
+      & .one-click-modal__copy-icon-svg path {
+        fill: #5bc246;
+      }
+    }
+  }
+
+  &__copy-icon-svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__copy-text {
+    display: block;
+    color: #268be9;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}

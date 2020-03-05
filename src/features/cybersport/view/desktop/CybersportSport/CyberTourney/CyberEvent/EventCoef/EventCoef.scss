@@ -1,0 +1,16 @@
+.cyber-event-coef {
+  width: 100%;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(180deg, #93CBFF 0%, #268BE9 100%) !important;
+  }
+  &_select {
+    background: linear-gradient(180deg, #4CA5F7 0%, #0C6EFF 100%), linear-gradient(180deg, #268BE9 0%, #1A5BBC 100%), #C4C4C4 !important;
+  }
+}

@@ -1,0 +1,1 @@
+export { SportItem } from './SportItem';

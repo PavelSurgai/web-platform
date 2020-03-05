@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input tests Input with value render properly 1`] = `
+<input
+  className={
+    Object {
+      "has": [Function],
+      "is": [Function],
+      "mix": [Function],
+      "split": [Function],
+      "state": [Function],
+      "toString": [Function],
+    }
+  }
+  name="Jopa"
+  onChange={[MockFunction]}
+  placeholder="Test placeholder"
+  required={true}
+  type="Jopa"
+  value="Jopa"
+/>
+`;

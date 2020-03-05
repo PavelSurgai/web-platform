@@ -1,0 +1,64 @@
+@import 'shared/style/varDesktop.scss';
+
+.app {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+  &::-webkit-scrollbar {
+    width: $appScrollWidth;
+    height: $appScrollWidth;
+    &-track {
+      border-radius: 6px;
+    }
+    &-thumb {
+      background: $blue-pizdec;
+      border-radius: 6px;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__test {
+    width: 32%;
+    height: 30rem;
+  }
+  &__main {
+    flex-grow: 2;
+    width: 100%;
+  }
+  &__main-wrapper {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+  }
+  &__main-left {
+    flex-shrink: 0;
+    width: 18.75rem;
+    max-width: 14%;
+  }
+  &__main-center {
+    flex-grow: 2;
+    margin: 0 0.5rem;
+    // max-width: 70%;
+  }
+  &__main-right {
+    flex-shrink: 0;
+    width: 18.75rem;
+    max-width: 14%;
+  }
+  &__header-wrapper {
+    width: 100%;
+    height: 8.75rem;
+  }
+}

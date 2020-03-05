@@ -1,0 +1,37 @@
+@import 'shared/style/varMobile.scss';
+.side-menu {
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 109, 116, 0.966);
+  color: #ffffff;
+  padding: 0.875rem 1rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow-y: auto;
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__popular {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    &_colorfull {
+      background: $popular-title;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.amount-column-list {
+  height: 2rem;
+  display: flex;
+  &__item {
+    width: 2.2rem;
+    height: 100%;
+    padding: 0 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    * {
+      fill: #fff;
+    }
+    &_active {
+      * {
+        fill: #95e4b7;
+      }
+    }
+  }
+  &__icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      width: 100%;
+    }
+  }
+}

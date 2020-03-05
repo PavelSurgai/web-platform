@@ -1,0 +1,1 @@
+export { FlatPagesLayout } from './FlatPagesLayout';

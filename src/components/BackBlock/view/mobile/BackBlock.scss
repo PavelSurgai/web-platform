@@ -1,0 +1,19 @@
+.back-block {
+  display: flex;
+  height: 3.5rem;
+  box-shadow: 0px 0px 4px #000812;
+  z-index: 1;
+  width: 100%;
+  &__content {
+    width: 100%;
+    display: flex;
+    padding-left: 0.6rem;
+    padding-right: 0.5rem;
+    align-items: center;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 500;
+    background-color: #182533;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,21 @@
+.inbet {
+  &__game {
+    height: 50rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #game-content {
+    height: auto !important;
+  }
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: static !important;
+  touch-action: auto !important;
+  margin-left: 0px !important;
+  margin: 0 auto !important;
+}

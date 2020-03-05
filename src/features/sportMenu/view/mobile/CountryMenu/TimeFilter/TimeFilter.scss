@@ -1,0 +1,21 @@
+.time-filter {
+  display: flex;
+  overflow-x: auto;
+  padding: 0.33rem;
+  color: #ffffff;
+  background: #242F3D;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  &__item {
+    box-sizing: border-box;
+    padding: 0.4rem 0.5rem;
+    margin-right: 0.33rem;
+    background: #666666;
+    border-radius: 5px;
+    white-space: nowrap;
+    &_active {
+      background: #5288C1;
+    }
+  }
+}

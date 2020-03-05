@@ -1,0 +1,17 @@
+.handle-login {
+  background: #E0E0E0;
+  border: 1px solid #268BE9;
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+  &__form input {
+    margin: 0.5rem;
+  }
+  &__form button {
+    margin: 0.5rem;
+  }
+}

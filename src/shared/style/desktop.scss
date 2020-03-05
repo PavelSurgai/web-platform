@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700,900');
+
+#root, html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+  background: #666666;
+  background-size: 4rem;
+  color: #ffffff;
+  // overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 1200px;
+}
+
+body {
+  min-width: 1200px;
+}
+
+ul, ol, li, p, a, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+@keyframes reduced {
+  0% {
+    color: #F61801;
+    background-position: 150% 0%;
+  }
+  99% {
+    color: #F61801;
+  }
+  100% {
+    color: inherit;
+    background-position: -100% 0%;
+  }
+}
+
+@keyframes increase {
+  0% {
+    color: #7CB71D;
+    background-position: 150% 0%;
+  }
+  99% {
+    color: #7CB71D;
+  }
+  100% {
+    color: inherit;
+    background-position: -100% 0%;
+  }
+}
+
+.coef-increased {
+  // background: linear-gradient(110deg, transparent 10%,rgba(144,254,103, 0.7) 15%,rgba(90,255,13, 0.7) 25%, transparent 30%);
+  background-size: 250% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  animation: increase 1.7s ease-in;
+}
+
+.coef-reduced {
+  background-image: linear-gradient(110deg, transparent 10%, rgba(232,137,129, 0.7) 15%,rgba(194,39,27, 0.7) 25%, transparent 30%);
+  background-size: 250% 100%;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  animation: reduced 1.7s ease-in;
+}
+
+@mixin mq-font-by-max-width($fontSize, $maxWidth) {
+  @media only screen and (max-width: $maxWidth) {
+    html {
+      font-size: $fontSize;
+    }
+  }
+}
+
+@include mq-font-by-max-width(19px, 2600px);
+@include mq-font-by-max-width(16.7px, 2300px);
+@include mq-font-by-max-width(14px, 1920px);
+@include mq-font-by-max-width(13.5px, 1750px);
+@include mq-font-by-max-width(13px, 1600px);
+@include mq-font-by-max-width(12.4px, 1440px);
+@include mq-font-by-max-width(11.5px, 1366px);
+
+//Jivo
+.label_39 {
+  display: none;
+}
+
+.stub {
+  padding: 2rem;
+  border-radius: 10px;
+  // background: linear-gradient(90deg, #1A5BBC 5.6%, #063C8B 100%);
+  width: 70%;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

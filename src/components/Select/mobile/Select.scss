@@ -1,0 +1,80 @@
+@import 'shared/style/varMobile.scss';
+
+.select {
+  width: 100%;
+  border-bottom: 3px solid $select-border;
+  box-sizing: border-box;
+  background: $select-main-background;
+  position: relative;
+  user-select: none;
+  color: white;
+
+  &_open {
+    border-radius: 1.1rem 1.1rem 0 0;
+    border-bottom: none;
+  }
+  
+  &__item {
+    width: 100%;
+    height: 2.125rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0.60938rem;
+    box-sizing: border-box;
+
+    &:hover {
+      background: #eeeeee;
+    }
+
+    &_current:hover {
+      background: none;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.5rem;
+    right: 1rem;
+    transition: transform .3s ease;
+  }
+
+  &__arrow-svg {
+    height: 0.571rem;
+    width: 0.857rem;
+
+  }
+
+  &_open &__arrow {
+    transform: scaleY(-1);
+  }
+
+  &__items-list {
+    position: absolute;
+    top: 2.125rem;
+    left: -1px;
+    border: 1px solid $select-border;
+    border-top: none;
+    border-radius: 0 0 1.1rem 1.1rem;
+    background: $select-main-background;
+    width: 100%;
+    z-index: 2;
+    max-height: 21rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      height: 90%;
+      scroll-margin-right: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 3px;
+      background: #C4C4C4;
+      cursor: pointer;
+    }
+  }
+}

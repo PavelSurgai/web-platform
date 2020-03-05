@@ -1,0 +1,110 @@
+.main-live-event {
+  position: relative;
+  width: 95%;
+  min-width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  &__background {
+    width: 100%;
+    background: #172433;
+    height: 11rem;
+    border-radius: 1rem;
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0.6rem;
+  }
+  &__top {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    color: #6C7883;
+    font-size: 0.8rem;
+    align-items: flex-start;
+  }
+  &__sport {
+    width: 26%;
+    display: flex;
+    align-items: center;
+  }
+  &__sport-icon {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.2rem;
+  }
+  &__tourney {
+    width: 51%;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-inline-box;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+  }
+  &__center {
+    width: 100%;
+    height: 46%;
+    display: flex;
+    word-break: break-word;
+  }
+  &__team {
+    width: 30%;
+    height: 100%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &__score-block {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__score {
+    font-size: 2rem;
+    color: #429BDB;
+  }
+  &__line {
+    width: 60%;
+    min-height: 2px;
+    background: #429BDB;
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    color: #6C7883;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  &__clock {
+    width: 0.8rem;
+    margin-right: 0.4rem;
+  }
+  &__bottom {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__value-item {
+    width: 31%;
+    min-width: 31%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #32353d;
+  }
+}

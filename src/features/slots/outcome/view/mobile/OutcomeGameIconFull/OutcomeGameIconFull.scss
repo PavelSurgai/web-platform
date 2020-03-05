@@ -1,0 +1,53 @@
+.outcome-game-icon-full {
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #070A14;
+  padding: 0.625rem 1rem;
+  background: #182533;
+  &__left-block {
+    display: flex;
+  }
+  &__name {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  &__description {
+    font-size: 0.875rem;
+    color: #6C7883;
+  }
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 10px;
+  }
+  &__text {
+    display: flex;
+    margin-left: 0.5625rem;
+    flex-direction: column;
+  }
+  &__button {
+    align-self: flex-end;
+    background: #486078;
+    border-radius: 2px;
+    min-width: 4rem;
+    height: 1.875rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+  }
+  &__arrow {
+    &-svg {
+      width: 0.6875rem;
+      height: 0.875rem;
+    }  
+  }
+}

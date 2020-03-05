@@ -1,0 +1,35 @@
+.not-autorized {
+
+  
+
+  &__buttons {
+    width: 18.75rem;
+    height: 2.5rem;
+    display: block;
+    margin: 2rem;
+  }
+
+  &__button {
+    margin-bottom: 1.25rem;
+  }
+
+  &__sad-text {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0rem 3rem 0rem 3rem;
+  }
+
+  &__sad-text-auth {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 3rem 5rem 1rem 5rem;
+    text-align: center;
+  }
+
+  &__smile {
+    width: 4.375rem;
+    height: 4.375rem;
+    margin: 13.25rem 10rem -2.125rem 9.5rem;
+  }
+}

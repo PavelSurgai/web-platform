@@ -1,0 +1,62 @@
+.full-event-group {
+  margin-bottom: 0.8rem;
+  color: #fff;
+  text-transform: uppercase;
+  &__header {
+    background: #1b1d21;
+    min-height: 2.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 0.2rem;
+    cursor: pointer;
+    color: #95e4b7;
+    &:hover {
+      background: #2a303c;
+    }
+    &_opened {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+  }
+  &__arrow {
+    svg {
+      transform: rotate(360deg);
+    }
+    &_opened {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__arrow-container {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-left: 1px solid #95e4b7;
+    box-sizing: border-box;
+    padding: 0.6rem;
+  }
+  &__mock {
+    width: 2.5rem;
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    &:last-child {
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+  }
+  &__coefficients {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-top: 1px solid #95e4b7;
+    box-sizing: border-box;
+    border-radius: 0 0 0.5rem 0.5rem;
+    border-bottom: none;
+  }
+}

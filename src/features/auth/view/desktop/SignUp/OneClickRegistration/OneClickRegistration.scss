@@ -1,0 +1,32 @@
+.one-click-registration {
+  width: 100%;
+  padding: 1.8rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__accept {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+  &__accept-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  &__button {
+    width: 30%;
+  }
+  &__link {
+    color: #1A5BBC;
+    text-decoration: underline;
+  }
+  &__select-container {
+    height: 3rem;
+    width: 8rem;
+    position: relative;
+  }
+}

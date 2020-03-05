@@ -1,0 +1,12 @@
+@import 'shared/style/varMobile.scss';
+
+.evolution-games {
+  display: flex;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #002857;
+  border: 1px solid #268be9;
+  box-sizing: border-box;
+}

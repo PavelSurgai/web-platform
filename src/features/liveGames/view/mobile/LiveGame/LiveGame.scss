@@ -1,0 +1,10 @@
+.live-games {
+  width: 100%;
+  &__iframe {
+    border: none;
+    overflow: hidden;
+    &::-webkit-scollbar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@import 'shared/style/varDesktop.scss';
+
+.sport-item {
+  width: 100%;
+  position: relative;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  &__sport {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1.875rem;
+    background: $lightgrey-gradient;
+    font-size: 0.875rem;
+    color: #000000;
+    box-sizing: border-box;
+    border-radius: 0.625rem;
+    margin-bottom: 0.3125rem;
+  }
+  &__sport-text {
+    margin-left: 2.1875rem;
+    flex-grow: 2;
+    z-index: 1;
+    transition: all .3s ease;
+  }
+  &__sport-img {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0.29rem;
+  }
+  &__sport-arrow {
+    height: 1.25rem;
+    width: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #D0D0D0;
+    z-index: 1;
+  }
+  &__sport-arrow-icon {
+    display: block;
+    width: 0.5625rem;
+  }
+  &__sport-left {
+    position: absolute;
+    width: 1.875rem;
+    height: 1.875rem;
+    background: linear-gradient(180deg, #3C8AFE 0%, #1A5BBC 100%), #1A5BBC;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s ease;
+    box-sizing: border-box;
+  }
+  &__reduce-button {
+    width: 9.375rem;
+    margin: auto;
+    margin-bottom: 0.3125rem;
+  }
+  &_collapsed &__sport-left, &:hover &__sport-left {
+    width: 100%;
+    z-index: 0;
+  }
+  &_collapsed &__sport-arrow-icon svg {
+    transform: rotate(180deg);
+    path {
+      fill: #ffffff;
+    }
+  }
+  &:hover &__sport-arrow-icon svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+  &_collapsed &__sport-arrow, &:hover &__sport-arrow {
+    border-left: 1px solid rgba(255, 255, 255, 0.36);
+  }
+  &_collapsed &__sport-text,&:hover &__sport-text {
+    color: #ffffff;
+  }
+
+  &_color_green &__sport-left {
+    background: linear-gradient(180deg, #5DDB52 0%, #01764C 100%);
+  }
+  &_color_lightblue &__sport-left {
+    background: linear-gradient(180deg, #8DC8FF 0.01%, #0085FF 100%), linear-gradient(180deg, #268BE9 0%, #0059AA 100%), #268BE9;
+  }
+  &_color_orange &__sport-left {
+    background: linear-gradient(180deg, #FFB541 0%, #B86300 100%), #FF9C00;
+  }
+  &_color_yellow &__sport-left {
+    background: linear-gradient(180deg, #FFE072 0%, #E4AA00 100%), #FFD250;
+  }
+  &_color_lightgreen &__sport-left {
+    background: linear-gradient(180deg, #ACEB46 0%, #599100 100%), #89BC37;
+  }
+}

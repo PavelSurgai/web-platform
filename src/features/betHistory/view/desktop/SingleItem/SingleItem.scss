@@ -1,0 +1,120 @@
+@import 'shared/style/varDesktop.scss';
+
+.single-item {
+  width: 100%;
+  min-height: 2.5rem;
+  display: flex;
+  color: #ffffff;
+  border-radius: 10px 2rem 2rem 10px;
+  padding: 0 0.8125rem;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  border: 1px solid $grey-border;
+  background: $white;
+  color: #000000;
+  margin-top: 0.25rem;
+  align-items: center;
+  position: relative;
+  padding-right: 2.5rem;
+
+  &_remove {
+    display: none;
+  }
+
+  &__yellow-line {
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    z-index: 100;
+  }
+
+  &__bets-table-cell {
+    overflow: hidden;
+    height: 0.875rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0.3rem;
+
+    &_type {
+      &_date {
+        width: 8%;
+      }
+      &_bet {
+        width: 36%;
+      }
+      &_outcome {
+        width: 20%;
+      }
+      &_amount, &_odd {
+        width: 6%;
+      }
+      &_possible {
+        justify-content: center;
+        width: 9%,
+      }
+      &_code {
+        width: 12%;
+      }
+      &_cart {
+        width: 3%;
+      }
+    }
+  }
+
+  &__cart {
+    margin-top: 0.1rem;
+    display: block;
+    width: 1.1rem;
+    & path {
+      fill: #FFD250;
+    }
+  }
+
+  &__cart-circle {
+    position: absolute;
+    right: 2.425rem;
+    height: 2.125rem;
+    width: 2.125rem;
+    min-width: 2.125rem;
+    border-radius: 2.125rem;
+    background: #135DA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__status-bar {
+    position: absolute;
+    right: 0.15rem;
+    height: 2.125rem;
+    width: 2.125rem;
+    border-radius: 2.125rem;
+    background: #135DA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+
+    &_status {
+      &_4 {
+        background: #F33838;
+      }
+      &_34,
+      &_17410 {
+        background: #1DB954;
+      }
+      &_322 {
+        background: #ffc400;
+      }
+    }
+  }
+}

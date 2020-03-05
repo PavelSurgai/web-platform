@@ -1,0 +1,19 @@
+.footer-links  {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  width: 100%;
+  &__links-list-item {
+    padding: 0 1rem;
+    white-space: nowrap;
+    &:not(:last-child) {
+      border-right: 1px solid #0061D3;
+    }
+  }
+  &__links-list-item {
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

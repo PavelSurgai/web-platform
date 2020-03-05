@@ -1,0 +1,12 @@
+.live-tourneys {
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+  &__flag {
+    min-width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1rem;
+  }
+  &__tourney-name {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,30 @@
+.country-menu {
+  background: #666666;
+  
+  &__view-all {
+    color: #95e4b7;
+    margin-left: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 3px;
+    padding-bottom: 0;
+  }
+
+
+  &__back-content {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__back-image {
+    width: 1.8rem;
+    margin-right: 0.6rem;
+  }
+}

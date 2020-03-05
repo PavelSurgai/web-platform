@@ -1,0 +1,47 @@
+.cyber-tourney-header {
+  width: 100%;
+  display: flex;
+  min-height: 1.8rem;
+  background: #182533;
+  color: #6C7883;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+  padding: 0 1rem;
+  &__title {
+    min-height: 2.3rem;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  &__bet-name {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__arrow-box {
+    margin-left: auto;
+    width: 2rem;
+    min-width: 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    box-sizing: border-box;
+  }
+  &__arrow-icon {
+    width: 100%;
+    * {
+      fill: #6C7883;
+    }
+    &_closed {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

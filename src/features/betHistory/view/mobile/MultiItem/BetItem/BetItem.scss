@@ -1,0 +1,223 @@
+.bet-item {
+  background: #242F3D url("../../img/bg.png") no-repeat;
+  background-position: 50% 50%;
+  &__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0.6rem 0.7rem;   
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4px dotted #666666;
+    position: relative;
+  }
+  padding-bottom: 3px;
+
+  &_status {
+    &_4 {
+      .bet-item__status {
+        color: #d30000;
+      }
+      .bet-item__header {
+        background-color: #d30000;
+      }
+      .bet-item__coef {
+        background-color: #d30000;
+      }
+      .bet-item__body {
+        background-color: #411f1f;
+      }
+      .bet-item__footer {
+        background-color: #411f1f;
+      }
+    }
+    &_34,
+    &_17410 {
+      .bet-item__status {
+        color: #00D355;
+      }
+      .bet-item__header {
+        background-color: #00D355;
+      }
+      .bet-item__coef {
+        background-color: #00D355;
+      }
+      .bet-item__body {
+        background-color: #1f412d;
+      }
+      .bet-item__footer {
+        background-color: #1f412d;
+      }
+    }
+    &_322 {
+      .bet-item__status {
+        color: #FFD100;
+      }
+      .bet-item__header {
+        background-color: #FFD100;
+      }
+      .bet-item__coef {
+        background-color: #FFD100;
+      }
+      .bet-item__body {
+        background-color: #413A1F;
+      }
+      .bet-item__footer {
+        background-color: #413A1F;
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  &__sell-bet {
+    background: #0061d3;
+    width: calc(100% - 1.4rem);
+    margin-left: 0.7rem;
+    box-sizing: border-box;
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3rem;
+  }
+
+  &__black-ball {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background: #666666;
+    border-radius: 100%;
+    bottom: -6px;
+    &_first {
+      left: -4px;
+    }
+    &_last {
+      right: -4px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    background: #1f2541;
+    position: relative;
+    padding: 0.3rem 0.6rem;
+    box-sizing: border-box;
+    border-top: 4px dotted #050a14;
+    &::after {
+      content: "";
+      display: block;
+      background: #050a14;
+      width: 2.3rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      position: absolute;
+      bottom: -0.5rem;
+      left: calc(50% - 1.15rem);
+    }
+  }
+
+  &__footer-column {
+    display: flex;
+    flex-direction: column;
+    &_first {
+      margin-right: 1.5rem;
+    }
+    &_last {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+
+  &__footer-text {
+    opacity: 0.7;
+    font-size: 0.75rem;
+  }
+
+  &__footer-value {
+    font-size: 0.85rem;
+  }
+
+  &__coef-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+  }
+
+  &__score {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__game-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+
+  &__event-date {
+    margin-left: auto;
+  }
+
+  &__coef {
+    height: 1.7rem;
+    padding: 0 0.9rem;
+    box-sizing: border-box;
+    background: #0061d3;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: cneter;
+    align-items: center;
+  }
+
+  &__teams {
+    margin-bottom: 0.7rem;
+  }
+
+  &__header {
+    position: relative;
+    width: 100%;
+    height: 2.9rem;
+    padding: 0.5rem 0.6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #0061d3;
+    font-size: 0.8rem;
+    &::after {
+      content: "";
+      display: block;
+      background: #050a14;
+      width: 2.3rem;
+      height: 1rem;
+      border-radius: 0.5rem;
+      position: absolute;
+      top: -0.5rem;
+    }
+  }
+
+  &__date-bet {
+    margin-right: auto;
+  }
+
+  &__id {
+    margin-left: auto;
+  }
+
+  &__logo {
+    position: absolute;
+  }
+}

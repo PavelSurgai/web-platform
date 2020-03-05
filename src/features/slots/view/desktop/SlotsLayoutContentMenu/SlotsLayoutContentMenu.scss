@@ -1,0 +1,24 @@
+@import "shared/style/varDesktop.scss";
+
+.slots-layout-content {
+  &__menu,
+  &__sub-menu {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 5rem;
+    border: 1px solid $semi-light-blue;
+    border-bottom: none;
+    background: $subheader-color;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem; 
+    padding-bottom: 0.3rem;
+    align-items: center;
+  }
+
+  &__sub-menu {
+    height: 4rem;
+  }
+}

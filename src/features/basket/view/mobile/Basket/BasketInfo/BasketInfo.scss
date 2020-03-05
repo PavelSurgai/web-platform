@@ -1,0 +1,61 @@
+.basket-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.8125rem 1rem;
+  color: #FFF;
+  font-size: 0.75rem;
+  background: #182533;
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  &__row-amount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    margin-top: 0.9rem;
+
+  }
+  &__button {
+    width: 60%;
+    height: 2.125rem;
+    align-self: flex-end;
+  }
+  &__row-text {
+    display: flex;
+    color: #6C7883;
+  }
+  &__quest-icon {
+    display: block;
+    width: 1.2rem;
+    margin-left: 0.7rem;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__sum {
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 100%;
+    color: #5892ff;
+  }
+  &__input {
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    .input {
+      width: 50%;
+      height: 2.2rem;
+    }
+  }
+  &__currency {
+    margin-left: 0.5rem;
+  }
+}

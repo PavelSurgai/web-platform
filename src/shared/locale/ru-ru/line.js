@@ -1,0 +1,33 @@
+export const line = {
+  sport: 'Спорт',
+  live: 'Live',
+  line: 'Линия',
+  loading: 'Загрузка',
+  showAll: 'Показать все',
+  collapse: 'Свернуть',
+  topEvents: 'Топ лиги',
+  upcomingEvents: 'Ближайшие события',
+  favorites: 'Избранное',
+  betNames: [
+    'Ставок', 'П1', 'X', 'П2', '1X', '12', '2X', 'М', 'Фора', 'Б', 'М', 'Тотал', 'Б',
+  ],
+  betShortName: [
+    '1', 'X', '2',
+  ],
+  twoHours: 'До начала менее 2 часов',
+  fourHours: 'До начала менее 4 часов',
+  sixHours: 'До начала менее 6 часов',
+  twelveHours: 'До начала менее 12 часов',
+  twentyFourHours: 'До начала менее 24 часа',
+  loadingError: 'Ошибка при загрузке',
+  cybersport: 'Киберспорт',
+  top: 'ТОП',
+  amountEvents: 'Количество событий',
+  betNamesMobile: {
+    mainBets: ['П1', 'X', 'П2'],
+    total: ['М', 'Тотал', 'Б'],
+    handicap: ['М', 'Фора', 'Б'],
+    doubleChance: ['1X', '12', 'X2'],
+  },
+  moreEvents: 'Больше событий',
+};

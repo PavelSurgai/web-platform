@@ -1,0 +1,11 @@
+@import "shared/style/varDesktop.scss";
+
+.slots-layout-content__icons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid $semi-light-blue;
+  box-sizing: border-box;
+  padding-top: 1rem;
+}
